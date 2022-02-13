@@ -1,9 +1,27 @@
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 import galaxy from "./galaxy.jpg";
+
+const items_data = [
+    {
+        name: "About me",
+        url : "/about"
+    },
+    {
+        name: "Projects",
+        url : "/projects"
+    },
+    {
+        name: "Random tools",
+        url : "/random-tools"
+    },
+
+]
 
 function App() {
   return (
     <>
+          <Navbar items={items_data} />
           <section>
               <img id="main-img" src={galaxy} alt="Profile pic"/>
           </section>
